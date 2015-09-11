@@ -14,6 +14,8 @@
 		3D85F0AC1BA29EDB00575455 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D85F0AB1BA29EDB00575455 /* Images.xcassets */; };
 		3D85F0AF1BA29EDB00575455 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D85F0AD1BA29EDB00575455 /* LaunchScreen.xib */; };
 		3D85F0BB1BA29EDB00575455 /* MessageInterceptorDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D85F0BA1BA29EDB00575455 /* MessageInterceptorDemoTests.m */; };
+		3D85F0C71BA29EFA00575455 /* MessageInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D85F0C61BA29EFA00575455 /* MessageInterceptor.m */; };
+		3D85F0CA1BA2A0DA00575455 /* MyTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D85F0C91BA2A0DA00575455 /* MyTextField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		3D85F0B41BA29EDB00575455 /* MessageInterceptorDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MessageInterceptorDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D85F0B91BA29EDB00575455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D85F0BA1BA29EDB00575455 /* MessageInterceptorDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageInterceptorDemoTests.m; sourceTree = "<group>"; };
+		3D85F0C51BA29EFA00575455 /* MessageInterceptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageInterceptor.h; sourceTree = "<group>"; };
+		3D85F0C61BA29EFA00575455 /* MessageInterceptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageInterceptor.m; sourceTree = "<group>"; };
+		3D85F0C81BA2A0DA00575455 /* MyTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTextField.h; sourceTree = "<group>"; };
+		3D85F0C91BA2A0DA00575455 /* MyTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTextField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,9 @@
 		3D85F09D1BA29EDB00575455 /* MessageInterceptorDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3D85F0C41BA29EE400575455 /* MessageInterceptor */,
+				3D85F0C81BA2A0DA00575455 /* MyTextField.h */,
+				3D85F0C91BA2A0DA00575455 /* MyTextField.m */,
 				3D85F0A21BA29EDB00575455 /* AppDelegate.h */,
 				3D85F0A31BA29EDB00575455 /* AppDelegate.m */,
 				3D85F0A51BA29EDB00575455 /* ViewController.h */,
@@ -117,6 +126,15 @@
 				3D85F0B91BA29EDB00575455 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3D85F0C41BA29EE400575455 /* MessageInterceptor */ = {
+			isa = PBXGroup;
+			children = (
+				3D85F0C51BA29EFA00575455 /* MessageInterceptor.h */,
+				3D85F0C61BA29EFA00575455 /* MessageInterceptor.m */,
+			);
+			name = MessageInterceptor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +237,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D85F0CA1BA2A0DA00575455 /* MyTextField.m in Sources */,
 				3D85F0A71BA29EDB00575455 /* ViewController.m in Sources */,
 				3D85F0A41BA29EDB00575455 /* AppDelegate.m in Sources */,
 				3D85F0A11BA29EDB00575455 /* main.m in Sources */,
+				3D85F0C71BA29EFA00575455 /* MessageInterceptor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

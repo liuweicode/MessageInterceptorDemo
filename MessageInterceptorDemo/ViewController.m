@@ -7,8 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "MyTextField.h"
 
-@interface ViewController ()
+@interface ViewController ()<UITextFieldDelegate>
 
 @end
 
@@ -17,11 +18,26 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    CGRect rect = [UIScreen mainScreen].bounds;
+    MyTextField *myTextFiled = [[MyTextField alloc] initWithFrame:CGRectMake((rect.size.width - 200) / 2, (rect.size.height - 30) / 2, 200, 30)];
+    myTextFiled.borderStyle = UITextBorderStyleLine;
+    myTextFiled.delegate = self;
+    [self.view addSubview:myTextFiled];
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma - UITextFieldDelegate
+
+-(void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    NSLog(@"ViewController textFieldDidBeginEditing");
 }
+
+-(void)textFieldDidEndEditing:(UITextField *)textField
+{
+    NSLog(@"ViewController textFieldDidEndEditing");
+}
+
 
 @end
